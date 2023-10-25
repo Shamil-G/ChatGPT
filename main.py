@@ -31,13 +31,13 @@ def get_request4(req: str):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-    # result = get_request(["Вызывается функция Oracle, которая должна возвращать VARCHAR2(32000),",
-    #                       "однако получаю ошибку ora-06512 и ora-06502 при возврате результата"])
-    # for message in result:
-    #     print(message, flush=True, end='')
     print('-----------------------------------------------------------------')
-    result = get_request4(["Вызывается функция Oracle, которая должна возвращать VARCHAR2(32000),",
+    result = get_request(["Вызывается функция Oracle, которая должна возвращать VARCHAR2(32000),",
                           "однако получаю ошибку ora-06512 и ora-06502 при возврате результата"])
+    for message in result:
+        print(message, flush=True, end='')
+    # result = get_request4(["Вызывается функция Oracle, которая должна возвращать VARCHAR2(32000),",
+    #                       "однако получаю ошибку ora-06512 и ora-06502 при возврате результата"])
     print('***-----------------------------------------------------------------')
     for message in result:
         print(message, flush=True, end='')
